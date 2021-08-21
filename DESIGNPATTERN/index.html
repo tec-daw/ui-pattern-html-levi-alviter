@@ -11,19 +11,27 @@
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <!-- If you read this part I must tell the responsive is shit 
-        I think I'll be doing it later, but not today. I wanna sleep right now
-        Pd: The classes are a shit too. 
-                                    Atte. Levi also known as A'lars
-        -->
-        <header id="header"> 
+       <!-- Bienvenido al code 
+    
+        Este es el contenedor del la barra del menú.-->
+        <header id="sticky-header"> 
+            <!-- Esta es la caja que contiene a la imagen. Si 
+            preguntas por qué una imagen dentro de una caja y no la 
+            imagen directa, es por un atributo CSS que uso-->
             <div class="header__logo-box">
                 <img class="header__logo-box-img" src="https://upload.wikimedia.org/wikipedia/commons/6/68/WeekToDo_Logo.png" alt="">
             </div>
+            <!--Titulo de la página-->
             <h1 class="header__title">Leviliebers </h1>
+            <!--Dropdown menu-->
             <ul class="header__menu-container">
+                <!--Las cajas principales son una lista de elementos
+                horizontales y cada lista tiene adentro un a
+                las listas hermanas de <a> no aparecen hasta que se pase
+                el mouse por la etiqueta <a>-->
                 <li><a href="#">Home</a></li>
-                <li class="header__menu-container-li"><a href="#">How to?</a>
+                <li class="header__menu-container-li">
+                    <a class="menu__container-a" href="#">How to?</a>
                     <ul class="menu-cont-li-ul-item">
                         <li><a href="#">Upload</a></li>
                         <li><a href="#">Download</a></li>
@@ -31,7 +39,8 @@
                         <li><a href="#">Data Center</a></li>
                     </ul>
                 </li>
-                <li class="header__menu-container-li"><a href="#">Our company</a>
+                <li class="header__menu-container-li">
+                    <a class="menu__container-a" href="#">Our company</a>
                     <ul class="menu-cont-li-ul-item">
                         <li><a href="#">Mision</a></li>
                         <li><a href="#">Vision</a></li>
@@ -39,16 +48,20 @@
                         <li><a href="#">Safe internet</a></li>
                     </ul>
                 </li>
-                <li class="header__menu-container-li"><a href="#">About us</a>
+                <li class="header__menu-container-li">
+                    <a class="menu__container-a" href="#">About us</a>
                     <ul class="menu-cont-li-ul-item">
                         <li><a href="#">E-mail</a></li>
                         <li><a href="#">Social media</a></li>
                     </ul>
-                    </li>
+                </li>
             </ul>
         </header>
         <main>
-            <div class="grid-container">
+            <!--Parte principal
+            el article tiene un section y cada section tiene un contenedor de imagen
+            (es mejor poner img dentro de div para poder usar CSS) y un p-->
+            <article class="grid-container">
                 <section class="grid-container__card">
                     <div class="image-container">
                         <img src="https://www.online-tech-tips.com/wp-content/uploads/2020/05/Anime-Wallpapers.jpg" alt="">
@@ -129,8 +142,9 @@
                         Inserte texto aquí
                     </p>
                 </section>
-            </div>
+            </article>
         </main>
+        <!--No hay footer-->
         <script type="text/javascript" src="index.js"></script>
     </body>
 </html>

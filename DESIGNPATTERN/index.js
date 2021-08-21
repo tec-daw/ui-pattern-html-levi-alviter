@@ -1,5 +1,5 @@
 let D = document, w = window, scrollTop;
-let header = D.getElementById('header'); 
+let header = D.getElementById('sticky-header'); 
 
 w.addEventListener('scroll',e=>{
     scrollTop = D.documentElement.scrollTop;

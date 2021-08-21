@@ -1,0 +1,4 @@
+La página web tiene dos design patterns (creo que me aloqué un poco). El primero es un 
+dropdown menu y el segundo cards. Para poder ver bien la página baja el scroll.
+Saludos. 
+								Atte. Levi
